@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<section>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Resource Ripple</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="login-signup.html">SignUp/Login</a></li>
+                    <li><a href="#campaigns">Campaigns</a></li>
+                    <li><a href="#about us">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+   <!-- Hero Section -->
+<section class="hero">
+    <img src="gg.jpg" alt="Donation Banner">
+</section>
+
+<!-- Donate Button Section -->
+<section class="donate-section">
+    <button onclick="donateNow()">Donate Now</button>
+</section>
+
+    
+
+    <!-- Categories Section -->
+    
+        <section id="categories" class="section">
+            <h2>Categories</h2>
+            <div class="categories-container">
+                <!-- Hunger Box -->
+                <a href="hunger.html" class="category-box hunger-box">
+                    <img src="hunger.jpg" alt="Hunger">
+                    <h3>Hunger</h3>
+                </a>
+        
+                <!-- Education Box -->
+                <a href="education.html" class="category-box education-box">
+                    <img src="education.jpg" alt="Education">
+                    <h3>Education</h3>
+                </a>
+        
+                <!-- Elders Box -->
+                <a href="elders.html" class="category-box elders-box">
+                    <img src="elder.jpg" alt="Elders">
+                    <h3>Elders</h3>
+                </a>
+        
+                <!-- Animal Box -->
+                <a href="animals.html" class="category-box animal-box">
+                    <img src="animal.jpg" alt="Animals">
+                    <h3>Animals</h3>
+                </a>
+            </div>
+        </section>
+        
+    
+    <section id="work" class="section">
+    <div class="how-it-works-section">
+        <h2 class="section-title">How It Works?</h2>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showContent('donors')">For Donors</button>
+            <button class="tab-btn" onclick="showContent('ngos')">For NGOs</button>
+        </div>
+    
+        <!-- Donors Tab Content -->
+        <div id="donors" class="tab-content active">
+            <div class="steps">
+                <div class="step">
+                    <img src="https://www.donatekart.com/_next/static/images/dk-process1-ff826ef23fbf38ff6e312d69ad1c17b6.webp" alt="Choose a Cause">
+                    <h3>CHOOSE A CAUSE</h3>
+                    <p>Browse different campaigns and select a cause.</p>
+                </div>
+                <div class="arrow">➡</div>
+                <div class="step">
+                    <img src="https://www.donatekart.com/_next/static/images/dk-process2-3493f77dcb0d787fb6ea538caa22c453.webp" alt="Select Products">
+                    <h3>SELECT PRODUCTS</h3>
+                    <p>Select products and quantity you wish to donate.</p>
+                </div>
+                <div class="arrow">➡</div>
+                <div class="step">
+                    <img src="https://www.donatekart.com/_next/static/images/dk-process3-9b5d3f79a11d7c06fe059c4052a691c9.webp" alt="Order Processing">
+                    <h3>ORDER PROCESSING</h3>
+                    <p>Checkout and pay for your contributions.</p>
+                </div>
+                <div class="arrow">➡</div>
+                <div class="step">
+                    <img src="https://www.donatekart.com/_next/static/images/dk-process4-8f6d0a288efb395b43ae5c98598d10c5.webp" alt="Delivery Report">
+                    <h3>DELIVERY REPORT</h3>
+                    <p>Updates on product utilization are provided by the NGO.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- NGOs Tab Content -->
+        <div id="ngos" class="tab-content">
+            <div class="steps">
+                <div class="step">
+                    <img src="https://www.donatekart.com/_next/static/images/ngo1-6c81422afddb30cc6eee34e38e203d0e.svg" alt="Register NGO">
+                    <h3>REGISTER YOUR NGO</h3>
+                    <p>Provide details to get listed on our platform.</p>
+                </div>
+                <div class="arrow">➡</div>
+                <div class="step">
+                    <img src="https://www.donatekart.com/_next/static/images/ngo2-29d7462953dc44e1bc751619327c7ab7.svg" alt="Add Requirements">
+                    <h3>ADD REQUIREMENTS</h3>
+                    <p>List the resources and help needed.</p>
+                </div>
+                <div class="arrow">➡</div>
+                <div class="step">
+                    <img src="https://www.donatekart.com/_next/static/images/ngoStep3-0ad2d4524fda2fa0452f10d59e3daa55.svg" alt="Track Donations">
+                    <h3>TRACK DONATIONS</h3>
+                    <p>Monitor donations and provide utilization updates.</p>
+                </div>
+                <div class="arrow">➡</div>
+                <div class="step">
+                    <img src="https://www.donatekart.com/_next/static/images/ngo4-fef1c6e48f70ada2ab16da5db8ae9a86.svg" alt="Thank Donors">
+                    <h3>THANK DONORS</h3>
+                    <p>Appreciate and acknowledge the contributions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+
+    <!-- Mission Section -->
+    <section id="mission" class="section">
+        <div class="info-container">
+            <!-- Mission Box -->
+            <a href="mission.html" class="info-box mission-box">
+                <h2>Our Mission</h2>
+                <p>We aim to connect donors with NGOs to make the world a better place.our mission is to bridge the gap between compassion and action. 
+                    Alleviate challenges faced by underprivileged communities.
+                   </p>
+            </a>
+        
+            <!-- About Us Box -->
+            <a href="about.html" class="info-box about-box">
+                <h2>About Us</h2>
+                <p>We are committed to transparency and making every donation impactful.
+What We Do:
+Empower Donors We make giving simple, transparent, and secure platform and Support NGOs.
+Why Choose Us?
+Transparency,Innovation,Community: 
+                </p>
+            </a>
+        
+            <!-- Help & Support Box -->
+            <a href="support.html" class="info-box support-box">
+                <h2>Help & Support</h2>
+                <p>If you have any questions or need assistance, please contact us with our emailid,
+                    and subsribe our website for other new notifiacations</p>
+            </a>
+        </div>
+        
+        
+    </section>
+    
+<!--Top donors-->
+<section id="top-donors" class="section">
+    <h2>Top Donors</h2>
+    <div class="donor-container">
+        <!-- Donor 1 -->
+        <div class="donor-box">
+            <img src="mukesh.jpeg" alt="John Doe" class="donor-image" >
+            <h3>Mukesh Ambani</h3>
+            <p>Donated: $10,000</p>
+        </div>
+        <!-- Donor 2 -->
+        <div class="donor-box">
+            <img src="donor2.jpeg" alt="Jane Smith" class="donor-image" >
+            <h3>Jane Smith</h3>
+            <p>Donated: $8,500</p>
+        </div>
+        <!-- Donor 3 -->
+        <div class="donor-box">
+            <img src="donor.jpeg" alt="Alice Johnson"  class="donor-image">
+            <h3>Alice Johnson</h3>
+            <p>Donated: $7,200</p>
+        </div>
+        <!-- Donor 4 -->
+        <div class="donor-box">
+            <img src="donor3.jpeg" alt="Mark Brown"  class="donor-image">
+            <h3>Mark Brown</h3>
+            <p>Donated: $6,800</p>
+        </div>
+        <!-- Donor 5 -->
+        <div class="donor-box">
+            <img src="donor4.jpeg" alt="Emily White"  class="donor-image">
+            <h3>Emily White</h3>
+            <p>Donated: $5,500</p>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- FAQ Section -->
+    <section id="faq-section" class="section">
+        <div class="faq-section-box">
+            <h2 class="faq-title">FAQs</h2>
+            <p class="faq-description">
+                Everything you need to know about our initiatives. If you have any other questions, please reach out to us at: 
+                <a href="mailto:support@give.do">support@give.do</a>
+            </p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What does give.do do? <span class="toggle-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Give.do connects donors with various NGOs and initiatives to support meaningful causes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How can I donate online? <span class="toggle-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>You can donate through our secure payment gateway by selecting the campaign or cause of your choice.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is there a minimum donation amount? <span class="toggle-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>No, you can donate any amount that fits your budget.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I claim tax exemption against my donation? <span class="toggle-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Once you donate, you will receive a tax receipt via email to claim exemptions under Section 80G.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What are the causes I can support through give.do? <span class="toggle-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>You can support education, healthcare, disaster relief, environment, and more causes listed on our platform.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I know if my donation has reached the beneficiary? <span class="toggle-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>You will receive updates and reports from the NGO detailing the impact of your donation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Why donate monthly? <span class="toggle-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Monthly donations ensure sustainable support and long-term impact for the beneficiaries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="subscribe-section">
+            <div class="subscribe-box">
+                <h2 class="subscribe-title">Subscribe Us</h2>
+                <form class="subscribe-form">
+                    <input type="email" class="subscribe-input" placeholder="Email ID" required>
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </form>
+            </div>
+            <div class="donation-info-box">
+                <div class="donation-info">
+                    <h3 class="donation-title">300+ Cr</h3>
+                    <p class="donation-description">Worth Donations</p>
+                </div>
+                <div class="donation-info">
+                    <h3 class="donation-title">15 Lakhs</h3>
+                    <p class="donation-description">Donor Transactions</p>
+                </div>
+                <div class="donation-info">
+                    <h3 class="donation-title">1400+</h3>
+                    <p class="donation-description">NGOs Impacted</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer-section">
+            <div class="footer-content">
+                <img src="donate.jpg" alt="Donatekart Logo" class="footer-logo">
+                <p class="footer-description">
+                    We are India's most trusted and transparent crowdfunding platform, with a vision to create a social impact.
+                    Our unique model allows people from across the globe to donate towards raising funds for products required by NGOs and charities in India, which are then delivered to them by us.
+                </p>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Donate Monthly</a></li>
+                    <li><a href="#">Explore Campaigns</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p><strong>Office Address, India:</strong> MPGI ,Kanpur ,UttarPradesh</p>
+                <p><strong>Phone:</strong> +91 8045685000</p>
+                <p><strong>Email:</strong> <a href="mailto:tulsig055@gmail.com">tulsig055@gmail.com</a></p>
+            </div>
+            <div class="footer-payment">
+                <p>Secure Payment Methods:</p>
+                <img src="visa.jpg" alt="Visa">
+                <img src="mastercard.jpg" alt="MasterCard">
+                <img src="paytm.jpg" alt="Paytm">
+                <img src="bank.jpg" alt="American Express">
+            </div>
+            <p class="footer-copyright">
+                © 2024 Resource ripple | All rights reserved. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+            </p>
+        </footer>
+        
+    </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
