@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.background {
+    background-image: url('https://plus.unsplash.com/premium_photo-1683140538884-07fb31428ca6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG9zJTIwb2YlMjBwb29yJTIwcGVvcGxlJTIwdGFraW5nJTIwZG9uYXRpb25zfGVufDB8fDB8fHww');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.google { background: #db4437; }
+.facebook { background: #3b5998; }
+.instagram { background: #e1306c; }
+.button-container {
+    text-align: center;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: white; /* Text color */
+    font-size: 13px; /* Font size */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded edges */
+    cursor: pointer; /* Cursor change on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+
+/* Hover Effect */
+.submit-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Slight upward movement */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Active State */
+.submit-btn:active {
+    transform: translateY(0); /* Reset upward movement */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Accessibility: Focus Effect */
+.submit-btn:focus {
+    outline: 2px solid #2575fc; /* Focus outline */
+    outline-offset: 4px; /* Gap between outline and button */
+}
+
+.hidden { display: none; }
+
+.error {
+    color: red;
+    font-size: 12px;
+}

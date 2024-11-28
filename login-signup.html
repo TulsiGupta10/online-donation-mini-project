@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Donation Platform</title>
+    <link rel="stylesheet" href="login-signup.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <!-- Donor Section -->
+            <div class="form-container donor">
+                <h2>For Donors</h2>
+                <div id="donor-login" class="form">
+                    <h3>Login</h3>
+                    <input type="email" id="donor-email" placeholder="Enter Email" required>
+                    <span id="donor-email-error" class="error"></span>
+                    <input type="text" placeholder="Username" required>
+                    <a href="#" class="forgot">Forgot Email?</a>
+                    <div class="button-container">
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                    <div class="social-login">
+                        <button class="google">Google</button>
+                        <button class="facebook">Facebook</button>
+                        <button class="instagram">Instagram</button>
+                    </div>
+                   
+                    <p>New here? <a href="#" onclick="showDonorSignup()">Register Now</a></p>
+                </div>
+                <div id="donor-signup" class="form hidden">
+                    <h3>Signup</h3>
+                    <input type="text" placeholder="Username" required>
+                    <input type="tel" id="donor-phone" placeholder="Mobile Number (10 digits)" required>
+                    <span id="donor-phone-error" class="error"></span>
+                    <select>
+                        <option value="" disabled selected>Select City</option>
+                        <option value="New York">New York</option>
+                        <option value="San Francisco">San Francisco</option>
+                    </select>
+                    <select>
+                        <option value="" disabled selected>Select State</option>
+                        <option value="California">California</option>
+                        <option value="Texas">Texas</option>
+                    </select>
+                    <input type="email" placeholder="Enter Email" required>
+                    <select>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div class="button-container">
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                    <div class="social-login">
+                        <button class="google">Google</button>
+                        <button class="facebook">Facebook</button>
+                        <button class="instagram">Instagram</button>
+                    </div>
+                    
+                    <p>Already have an account? <a href="#" onclick="showDonorLogin()">Login</a></p>
+                </div>
+            </div>
+
+            <!-- NGO Section -->
+            <div class="form-container ngo">
+                <h2>For NGOs</h2>
+                <div id="ngo-login" class="form">
+                    <h3>Login</h3>
+                    <input type="email" id="ngo-email" placeholder="Enter Email" required>
+                    <span id="ngo-email-error" class="error"></span>
+                    <input type="text" placeholder="Username" required>
+                    <a href="#" class="forgot">Forgot Email?</a>
+                    <div class="button-container">
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                    <div class="social-login">
+                        <button class="google">Google</button>
+                        <button class="facebook">Facebook</button>
+                        <button class="instagram">Instagram</button>
+                    </div>
+                   
+                    <p>New here? <a href="#" onclick="showNgoSignup()">Register Now</a></p>
+                </div>
+                <div id="ngo-signup" class="form hidden">
+                    <h3>Signup</h3>
+                    <input type="text" placeholder="Username" required>
+                    <input type="tel" id="ngo-phone" placeholder="Mobile Number (10 digits)" required>
+                    <span id="ngo-phone-error" class="error"></span>
+                    <select>
+                        <option value="" disabled selected>Select City</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Houston">Houston</option>
+                    </select>
+                    <select>
+                        <option value="" disabled selected>Select State</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Nevada">Nevada</option>
+                    </select>
+                    <input type="email" placeholder="Enter Email" required>
+                    <select>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div class="button-container">
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                    <div class="social-login">
+                        <button class="google">Google</button>
+                        <button class="facebook">Facebook</button>
+                        <button class="instagram">Instagram</button>
+                    </div>
+                    
+                    <p>Already have an account? <a href="#" onclick="showNgoLogin()">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login-signup.js"></script>
+</body>
+</html>
